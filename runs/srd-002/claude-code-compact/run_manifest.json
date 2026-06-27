@@ -1,0 +1,50 @@
+{
+  "run_id": "demo-002-cc",
+  "case_id": "SRD-002-cc",
+  "case_title": "Clear Creek Off-Channel Storage Expansion",
+  "run_date": "2026-06-26",
+  "run_type": "Claude Code compact run",
+  "rubric_version": "v3-three-layer",
+  "gold_checklist": "artifacts/demo-002/protocols/evaluator-only-gold-checklist.md",
+  "gold_checklist_tiers": { "must_detect": 3, "should_detect": 4 },
+  "scenario_input": "artifacts/demo-002/inputs/synthetic-reservoir-scenario-v0.1.md",
+
+  "expected_decision_range": ["Build with conditions", "Phased approval", "Redesign minor components"],
+  "suspicious_decisions": ["Defer", "Do not build"],
+
+  "outputs": {
+    "run_summary": "artifacts/demo-002-cc/outputs/run-summary.md",
+    "evaluation_three_layer": "artifacts/demo-002-cc/outputs/evaluation-three-layer.md"
+  },
+
+  "final_scores": {
+    "multi_agent": { "L1_outcome": 26, "L2_evidence": 34, "L3_process": 44, "L1_max": 30, "L2_max": 40, "L3_max": 55 },
+    "single_agent": { "L1_outcome": 22, "L2_evidence": 26, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null },
+    "mcda": { "L1_outcome": 15, "L2_evidence": 20, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null }
+  },
+
+  "risk_coverage": {
+    "multi_agent": { "M_detected": 3, "M_total": 3, "S_detected": 4, "S_total": 4, "L2_2_score": 17 },
+    "single_agent": { "M_detected": 3, "M_total": 3, "S_detected": 2, "S_total": 4, "L2_2_score": 13 },
+    "mcda": { "M_detected": 3, "M_total": 3, "S_detected": "~2", "S_total": 4, "L2_2_score": 10 }
+  },
+
+  "final_recommendation": {
+    "multi_agent": "Build with conditions through phased approval",
+    "single_agent": "Approve with conditions",
+    "mcda": "Build with conditions (score 3.94/5.0)",
+    "in_expected_range": { "multi_agent": true, "single_agent": true, "mcda": true }
+  },
+
+  "key_deliberative_contributions": [
+    "Phased approval sequencing: tariff and wetland conditions are commissioning requirements, not construction blockers — produced via moderator conflict map",
+    "Wetland buffer enforceability as legal upgrade, not just EIA commitment — produced via NGO stakeholder required challenge",
+    "Grazing access route finalization as pre-construction condition — produced via Social agent required challenge",
+    "Two-year drought stress-test as phased commissioning milestone, not a reason to Defer — produced via Climate Risk and Hydrologist exchange"
+  ],
+
+  "claims_audited": 49,
+  "claims_corrected": 4,
+  "minority_reports": 2,
+  "unresolved_audit_blockers": 0
+}

@@ -1,0 +1,29 @@
+﻿{
+    "mode":  "compact run",
+    "outputs":  {
+                    "compact_three_layer_evaluation":  "artifacts/demo-002/outputs/evaluation-three-layer-compact.md",
+                    "case_run_summary":  "artifacts/demo-002/outputs/case-run-summary.md"
+                },
+    "run_label":  "compact synthetic run",
+    "score_summary":  {
+                          "single_agent":  {
+                                               "layer_2_evidence":  30,
+                                               "layer_1_outcome":  26
+                                           },
+                          "mcda":  {
+                                       "layer_2_evidence":  27,
+                                       "layer_1_outcome":  23
+                                   },
+                          "multi_agent":  {
+                                              "layer_1_outcome":  27,
+                                              "layer_2_evidence":  33,
+                                              "layer_3_process":  39
+                                          }
+                      },
+    "project":  "reservoir-multi-agent-deliberation",
+    "evaluator_only_gold_checklist":  "artifacts/demo-002/protocols/evaluator-only-gold-checklist.md",
+    "input_packet":  "artifacts/demo-002/inputs/synthetic-reservoir-scenario-v0.1.md",
+    "case_id":  "SRD-002",
+    "final_recommendation":  "Build with conditions through phased approval",
+    "run_date":  "2026-06-26"
+}

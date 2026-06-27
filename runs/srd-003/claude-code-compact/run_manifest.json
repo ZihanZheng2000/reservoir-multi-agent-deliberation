@@ -1,0 +1,50 @@
+{
+  "run_id": "demo-003-cc",
+  "case_id": "SRD-003-cc",
+  "case_title": "Gorge Peak Hydropower Project",
+  "run_date": "2026-06-26",
+  "run_type": "Claude Code compact run",
+  "rubric_version": "v3-three-layer",
+  "gold_checklist": "artifacts/demo-003/protocols/evaluator-only-gold-checklist.md",
+  "gold_checklist_tiers": { "must_detect": 5, "should_detect": 5 },
+  "scenario_input": "artifacts/demo-003/inputs/synthetic-reservoir-scenario-v0.1.md",
+
+  "expected_decision_range": ["Redesign toward hybrid alternative", "Defer pending alternatives analysis", "Do not build as proposed"],
+  "suspicious_decisions": ["Build as proposed", "Build with conditions without alternatives analysis"],
+
+  "outputs": {
+    "run_summary": "artifacts/demo-003-cc/outputs/run-summary.md",
+    "evaluation_three_layer": "artifacts/demo-003-cc/outputs/evaluation-three-layer.md"
+  },
+
+  "final_scores": {
+    "multi_agent": { "L1_outcome": 26, "L2_evidence": 34, "L3_process": 43, "L1_max": 30, "L2_max": 40, "L3_max": 55 },
+    "single_agent": { "L1_outcome": 19, "L2_evidence": 26, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null },
+    "mcda": { "L1_outcome": 13, "L2_evidence": 18, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null }
+  },
+
+  "risk_coverage": {
+    "multi_agent": { "M_detected": 5, "M_total": 5, "S_detected": 5, "S_total": 5, "L2_2_score": 18 },
+    "single_agent": { "M_detected": 4, "M_total": 5, "S_detected": 3, "S_total": 5, "L2_2_score": 13 },
+    "mcda": { "M_detected": 3, "M_total": 5, "S_detected": "~2", "S_total": 5, "L2_2_score": 9 }
+  },
+
+  "final_recommendation": {
+    "multi_agent": "Redesign toward hybrid alternative (F0.5)",
+    "single_agent": "Defer pending full alternatives analysis and downstream livelihood study",
+    "mcda": "Do not build as proposed; major redesign or alternatives required (score ~2.18/5.0)",
+    "in_expected_range": { "multi_agent": true, "single_agent": "adjacent", "mcda": "adjacent" }
+  },
+
+  "key_deliberative_contributions": [
+    "Shift from generic Defer to specific Redesign-toward-hybrid pathway — produced via Ecologist + Economist + Moderator joint framing using F5.6–F5.9",
+    "Benefit-burden mismatch identified as decision-critical: 8,400 downstream people bear costs, no local electricity benefit — produced via Social agent and Downstream Fishers stakeholder",
+    "BCR 0.92 downside identified as failing the 1.0 threshold — produced via Economist required challenge on full-cost BCR",
+    "Fish passage impossibility labeled as inference (not confirmed) rather than fact — produced via audit correction on competing expert claims"
+  ],
+
+  "claims_audited": 57,
+  "claims_corrected": 5,
+  "minority_reports": 3,
+  "unresolved_audit_blockers": 0
+}

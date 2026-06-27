@@ -1,0 +1,24 @@
+﻿{
+  "run_id": "demo-004-cc",
+  "case_id": "SRD-004-cc",
+  "case_title": "Flood-control emergency reservoir after repeated disasters",
+  "run_date": "2026-06-26",
+  "run_type": "Claude Code compact run",
+  "rubric_version": "v3-three-layer",
+  "gold_checklist": "artifacts/demo-004/protocols/evaluator-only-gold-checklist.md",
+  "scenario_input": "artifacts/demo-004/inputs/synthetic-reservoir-scenario-v0.1.md",
+  "outputs": {
+    "run_summary": "artifacts/demo-004-cc/outputs/run-summary.md",
+    "evaluation_three_layer": "artifacts/demo-004-cc/outputs/evaluation-three-layer.md"
+  },
+  "final_scores": {
+    "multi_agent": { "L1_outcome": 26, "L2_evidence": 34, "L3_process": 43, "L1_max": 30, "L2_max": 40, "L3_max": 55 },
+    "single_agent": { "L1_outcome": 21, "L2_evidence": 27, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null },
+    "mcda": { "L1_outcome": 13, "L2_evidence": 19, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null }
+  },
+  "final_recommendation": {
+    "multi_agent": "Phased emergency package now; defer final reservoir approval",
+    "single_agent": "Emergency measures now; defer final reservoir approval",
+    "mcda": "Redesign / Defer with emergency measures"
+  }
+}

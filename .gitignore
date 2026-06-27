@@ -1,0 +1,23 @@
+﻿# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python / notebooks, reserved for future scripts
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Local temporary files
+*.tmp
+*.bak
+~$*
+
+# Large generated exports, if created later
+*.zip
+*.tar.gz
+*.pdf
+*.docx

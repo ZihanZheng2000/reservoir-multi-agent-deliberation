@@ -1,0 +1,44 @@
+﻿{
+  "run_id": "demo-007-cc",
+  "case_id": "SRD-007-cc",
+  "case_title": "Mara Bend Irrigation Reservoir",
+  "run_date": "2026-06-26",
+  "run_type": "Claude Code compact run",
+  "rubric_version": "v3-three-layer",
+  "gold_checklist": "artifacts/demo-007/protocols/evaluator-only-gold-checklist.md",
+  "gold_checklist_tiers": { "must_detect": 4, "should_detect": 6 },
+  "scenario_input": "artifacts/demo-007/inputs/synthetic-reservoir-scenario-v0.1.md",
+  "expected_decision_range": ["Build with conditions; revert to Defer if livelihood plan not complete in 9 months", "Defer specifying livelihood plan as the specific condition"],
+  "suspicious_decisions": ["Unconditional Build", "Do not build", "Redesign", "Generic Defer without identifying livelihood plan as swing condition"],
+  "outputs": {
+    "run_summary": "artifacts/demo-007-cc/outputs/run-summary.md",
+    "evaluation_three_layer": "artifacts/demo-007-cc/outputs/evaluation-three-layer.md"
+  },
+  "final_scores": {
+    "multi_agent": { "L1_outcome": 27, "L2_evidence": 34, "L3_process": 45, "L1_max": 30, "L2_max": 40, "L3_max": 55 },
+    "single_agent": { "L1_outcome": 16, "L2_evidence": 26, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null },
+    "mcda": { "L1_outcome": 11, "L2_evidence": 18, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null }
+  },
+  "risk_coverage": {
+    "multi_agent": { "M_detected": 4, "M_total": 4, "S_detected": 6, "S_total": 6, "L2_2_score": 18 },
+    "single_agent": { "M_detected": 4, "M_total": 4, "S_detected": 3, "S_total": 6, "L2_2_score": 13 },
+    "mcda": { "M_detected": 2, "M_total": 4, "S_detected": 2, "S_total": 6, "L2_2_score": 9 }
+  },
+  "final_recommendation": {
+    "multi_agent": "Build with conditions; revert to Defer if livelihood restoration plan not complete in 9 months",
+    "single_agent": "Defer until livelihood plan and economic review complete",
+    "mcda": "Redesign or Defer; marginally viable (score ~2.24/5.0)",
+    "in_expected_range": { "multi_agent": true, "single_agent": "adjacent", "mcda": "partially — Defer is adjacent, Redesign is suspicious" }
+  },
+  "key_deliberative_contributions": [
+    "Time-conditioned Build-with-conditions with 9-month revert trigger — produced via Moderator + Development Lender + Social agent joint exchange",
+    "Livelihood restoration section identified as the single swing condition (not the EAP or fish passage) — produced via Social agent confirmation and Lender stakeholder signal",
+    "EAP at outline stage correctly characterized as pre-construction (not pre-approval) requirement — produced via Dam Safety required challenge audit correction A3",
+    "BCR 0.97 under downside noted as concern but not standalone blocker — produced via Economist and audit correction A2",
+    "Upstream households conditional support directly informs the revert trigger structure — produced via stakeholder preservation"
+  ],
+  "claims_audited": 62,
+  "claims_corrected": 5,
+  "minority_reports": 3,
+  "unresolved_audit_blockers": 0
+}

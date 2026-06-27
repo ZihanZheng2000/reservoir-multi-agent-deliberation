@@ -1,0 +1,44 @@
+{
+  "run_id": "demo-008-cc",
+  "case_id": "SRD-008-cc",
+  "case_title": "Cascada Gorge Hydropower Project",
+  "run_date": "2026-06-26",
+  "run_type": "Claude Code compact run",
+  "rubric_version": "v3-three-layer",
+  "gold_checklist": "artifacts/demo-008/protocols/evaluator-only-gold-checklist.md",
+  "gold_checklist_tiers": { "must_detect": 5, "should_detect": 5 },
+  "scenario_input": "artifacts/demo-008/inputs/synthetic-reservoir-scenario-v0.1.md",
+  "expected_decision_range": ["Do not build; pursue wind portfolio alternative"],
+  "suspicious_decisions": ["Build or Build with conditions", "Redesign without ruling out core objections", "Defer when core problems are not resolvable by study time"],
+  "outputs": {
+    "run_summary": "artifacts/demo-008-cc/outputs/run-summary.md",
+    "evaluation_three_layer": "artifacts/demo-008-cc/outputs/evaluation-three-layer.md"
+  },
+  "final_scores": {
+    "multi_agent": { "L1_outcome": 27, "L2_evidence": 35, "L3_process": 46, "L1_max": 30, "L2_max": 40, "L3_max": 55 },
+    "single_agent": { "L1_outcome": 22, "L2_evidence": 29, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null },
+    "mcda": { "L1_outcome": 15, "L2_evidence": 20, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null }
+  },
+  "risk_coverage": {
+    "multi_agent": { "M_detected": 5, "M_total": 5, "S_detected": 5, "S_total": 5, "L2_2_score": 18 },
+    "single_agent": { "M_detected": 5, "M_total": 5, "S_detected": 3, "S_total": 5, "L2_2_score": 14 },
+    "mcda": { "M_detected": 3, "M_total": 5, "S_detected": "~2", "S_total": 5, "L2_2_score": 9 }
+  },
+  "final_recommendation": {
+    "multi_agent": "Do not build; pursue wind portfolio alternative (F0.5)",
+    "single_agent": "Do not build; pursue wind and storage alternatives",
+    "mcda": "Do not build (score ~1.73/5.0)",
+    "in_expected_range": { "multi_agent": true, "single_agent": true, "mcda": true }
+  },
+  "key_deliberative_contributions": [
+    "Explicit Redesign ruling-out for each of the three core objections (BCR, endemic extinction, indigenous consent) — produced via Ecologist + Legal + Moderator joint framing",
+    "Revenue sharing increase correctly ruled out as a path to indigenous consent — produced via Moderator direct challenge and audit correction A1",
+    "Three independent grounds for rejection identified — produced via Economist, Ecologist, and Legal agents working in parallel",
+    "Tourism livelihood exclusion from BCR identified as understating the economic case against the project — produced via Social agent and Tourism Association stakeholder",
+    "Wind portfolio as the specific policy-compatible alternative — produced via Economist comparison of BCR 0.94 vs. 1.68"
+  ],
+  "claims_audited": 58,
+  "claims_corrected": 4,
+  "minority_reports": 2,
+  "unresolved_audit_blockers": 0
+}

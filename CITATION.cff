@@ -1,0 +1,17 @@
+﻿cff-version: 1.2.0
+title: "Reservoir Multi-Agent Deliberation Benchmark"
+message: "If you use this benchmark, please cite the repository. Update author and release metadata before public release."
+type: software
+authors:
+  - family-names: "TODO"
+    given-names: "TODO"
+repository-code: "https://github.com/TODO/reservoir-multi-agent-deliberation"
+version: "0.1.0"
+date-released: "2026-06-26"
+keywords:
+  - multi-agent deliberation
+  - reservoir decision support
+  - synthetic benchmark
+  - MCDA
+  - environmental governance
+license: "NOASSERTION"

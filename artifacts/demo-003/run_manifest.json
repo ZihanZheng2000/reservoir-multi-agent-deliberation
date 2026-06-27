@@ -1,0 +1,29 @@
+﻿{
+    "mode":  "compact run",
+    "outputs":  {
+                    "compact_three_layer_evaluation":  "artifacts/demo-003/outputs/evaluation-three-layer-compact.md",
+                    "case_run_summary":  "artifacts/demo-003/outputs/case-run-summary.md"
+                },
+    "run_label":  "compact synthetic run",
+    "score_summary":  {
+                          "single_agent":  {
+                                               "layer_2_evidence":  29,
+                                               "layer_1_outcome":  23
+                                           },
+                          "mcda":  {
+                                       "layer_2_evidence":  24,
+                                       "layer_1_outcome":  19
+                                   },
+                          "multi_agent":  {
+                                              "layer_1_outcome":  27,
+                                              "layer_2_evidence":  34,
+                                              "layer_3_process":  42
+                                          }
+                      },
+    "project":  "reservoir-multi-agent-deliberation",
+    "evaluator_only_gold_checklist":  "artifacts/demo-003/protocols/evaluator-only-gold-checklist.md",
+    "input_packet":  "artifacts/demo-003/inputs/synthetic-reservoir-scenario-v0.1.md",
+    "case_id":  "SRD-003",
+    "final_recommendation":  "Redesign toward the hybrid alternative",
+    "run_date":  "2026-06-26"
+}

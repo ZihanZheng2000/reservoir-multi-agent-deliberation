@@ -1,0 +1,29 @@
+﻿{
+    "mode":  "compact run",
+    "outputs":  {
+                    "compact_three_layer_evaluation":  "artifacts/demo-008/outputs/evaluation-three-layer-compact.md",
+                    "case_run_summary":  "artifacts/demo-008/outputs/case-run-summary.md"
+                },
+    "run_label":  "compact synthetic run",
+    "score_summary":  {
+                          "single_agent":  {
+                                               "layer_2_evidence":  31,
+                                               "layer_1_outcome":  27
+                                           },
+                          "mcda":  {
+                                       "layer_2_evidence":  28,
+                                       "layer_1_outcome":  25
+                                   },
+                          "multi_agent":  {
+                                              "layer_1_outcome":  29,
+                                              "layer_2_evidence":  35,
+                                              "layer_3_process":  40
+                                          }
+                      },
+    "project":  "reservoir-multi-agent-deliberation",
+    "evaluator_only_gold_checklist":  "artifacts/demo-008/protocols/evaluator-only-gold-checklist.md",
+    "input_packet":  "artifacts/demo-008/inputs/synthetic-reservoir-scenario-v0.1.md",
+    "case_id":  "SRD-008",
+    "final_recommendation":  "Do not build; pursue wind portfolio alternative",
+    "run_date":  "2026-06-26"
+}

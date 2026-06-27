@@ -1,0 +1,29 @@
+﻿{
+    "mode":  "compact run",
+    "outputs":  {
+                    "compact_three_layer_evaluation":  "artifacts/demo-005/outputs/evaluation-three-layer-compact.md",
+                    "case_run_summary":  "artifacts/demo-005/outputs/case-run-summary.md"
+                },
+    "run_label":  "compact synthetic run",
+    "score_summary":  {
+                          "single_agent":  {
+                                               "layer_2_evidence":  30,
+                                               "layer_1_outcome":  24
+                                           },
+                          "mcda":  {
+                                       "layer_2_evidence":  25,
+                                       "layer_1_outcome":  20
+                                   },
+                          "multi_agent":  {
+                                              "layer_1_outcome":  28,
+                                              "layer_2_evidence":  35,
+                                              "layer_3_process":  44
+                                          }
+                      },
+    "project":  "reservoir-multi-agent-deliberation",
+    "evaluator_only_gold_checklist":  "artifacts/demo-005/protocols/evaluator-only-gold-checklist.md",
+    "input_packet":  "artifacts/demo-005/inputs/synthetic-reservoir-scenario-v0.1.md",
+    "case_id":  "SRD-005",
+    "final_recommendation":  "Defer pending basin agreement, joint monitoring, and drought rules",
+    "run_date":  "2026-06-26"
+}

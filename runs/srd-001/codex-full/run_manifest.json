@@ -1,0 +1,28 @@
+﻿{
+  "project": "reservoir-multi-agent-deliberation",
+  "case_id": "SRD-001-co-full",
+  "run_label": "Codex full transcript-style run",
+  "run_date": "2026-06-26",
+  "mode": "full transcript-style synthetic run",
+  "input_packet": "artifacts/demo-001-co-full/inputs/synthetic-reservoir-scenario-v0.2-neutral.md",
+  "evaluator_only_gold_checklist": "artifacts/demo-001-co-full/protocols/evaluator-only-gold-checklist.md",
+  "outputs": {
+    "role_cards": "artifacts/demo-001-co-full/agents/role-cards-v0.1.md",
+    "round_1_expert_assessments": "artifacts/demo-001-co-full/outputs/round-1-expert-assessments.md",
+    "round_1_stakeholder_assessments": "artifacts/demo-001-co-full/outputs/round-1-stakeholder-assessments.md",
+    "moderator_conflict_map": "artifacts/demo-001-co-full/outputs/moderator-conflict-map.md",
+    "round_2_deliberation": "artifacts/demo-001-co-full/outputs/round-2-deliberation.md",
+    "evidence_audit": "artifacts/demo-001-co-full/outputs/evidence-audit.md",
+    "decision_authority_recommendation": "artifacts/demo-001-co-full/outputs/decision-authority-recommendation.md",
+    "baseline_single_agent": "artifacts/demo-001-co-full/outputs/baseline-single-agent.md",
+    "baseline_mcda": "artifacts/demo-001-co-full/outputs/baseline-mcda.md",
+    "evaluation_three_layer": "artifacts/demo-001-co-full/outputs/evaluation-three-layer.md",
+    "run_summary": "artifacts/demo-001-co-full/outputs/run-summary.md"
+  },
+  "final_recommendation": "Redesign; defer final build approval",
+  "score_summary": {
+    "multi_agent": {"layer_1_outcome": 28, "layer_2_evidence": 38, "layer_3_process": 51},
+    "single_agent": {"layer_1_outcome": 24, "layer_2_evidence": 30},
+    "mcda": {"layer_1_outcome": 17, "layer_2_evidence": 23}
+  }
+}

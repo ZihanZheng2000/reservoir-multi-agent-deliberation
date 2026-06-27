@@ -1,0 +1,29 @@
+﻿{
+    "mode":  "compact run",
+    "outputs":  {
+                    "compact_three_layer_evaluation":  "artifacts/demo-007/outputs/evaluation-three-layer-compact.md",
+                    "case_run_summary":  "artifacts/demo-007/outputs/case-run-summary.md"
+                },
+    "run_label":  "compact synthetic run",
+    "score_summary":  {
+                          "single_agent":  {
+                                               "layer_2_evidence":  28,
+                                               "layer_1_outcome":  20
+                                           },
+                          "mcda":  {
+                                       "layer_2_evidence":  23,
+                                       "layer_1_outcome":  16
+                                   },
+                          "multi_agent":  {
+                                              "layer_1_outcome":  29,
+                                              "layer_2_evidence":  34,
+                                              "layer_3_process":  43
+                                          }
+                      },
+    "project":  "reservoir-multi-agent-deliberation",
+    "evaluator_only_gold_checklist":  "artifacts/demo-007/protocols/evaluator-only-gold-checklist.md",
+    "input_packet":  "artifacts/demo-007/inputs/synthetic-reservoir-scenario-v0.1.md",
+    "case_id":  "SRD-007",
+    "final_recommendation":  "Build with conditions; approval lapses to Defer if livelihood plan is not complete in 9 months",
+    "run_date":  "2026-06-26"
+}

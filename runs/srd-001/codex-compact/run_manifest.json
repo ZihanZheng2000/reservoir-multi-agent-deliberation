@@ -1,0 +1,65 @@
+{
+  "run_id": "demo-001-co",
+  "case_id": "SRD-001-codex-revised",
+  "project": "reservoir-multi-agent-deliberation",
+  "stage": "Modeling revised synthetic demo",
+  "status": "complete",
+  "mode": "revised-protocol compact run",
+  "inputs": {
+    "neutral_scenario": "artifacts/demo-001-co/inputs/synthetic-reservoir-scenario-v0.2-neutral.md",
+    "gold_checklist": "artifacts/demo-001-co/protocols/evaluator-only-gold-checklist.md",
+    "decision_thresholds": "artifacts/demo-001-co/protocols/decision-thresholds-v0.1.md",
+    "revised_rubric": "artifacts/demo-001-co/protocols/revised-evaluation-rubric-v0.1.md",
+    "audit_template": "artifacts/demo-001-co/protocols/quantitative-evidence-audit-template.md",
+    "prompt_templates": "artifacts/demo-001-co/prompts/"
+  },
+  "outputs": {
+    "revised_run_summary": "artifacts/demo-001-co/outputs/revised-run-summary.md",
+    "revised_evaluation": "artifacts/demo-001-co/outputs/revised-evaluation.md",
+    "three_layer_evaluation": "artifacts/demo-001-co/outputs/evaluation-three-layer.md",
+    "v1_v2_comparison": "artifacts/demo-001-co/outputs/v1-v2-comparison.md",
+    "emergent_issue_discovery": "artifacts/demo-001-co/outputs/emergent-issue-discovery.md",
+    "codex_vs_claude_code_comparison": "artifacts/demo-001-co/outputs/codex-vs-claude-code-comparison.md"
+  },
+  "recommendation": "Redesign; final build approval deferred",
+  "scores": {
+    "multi_agent": {
+      "shared_quality": 56,
+      "deliberative_process": 37,
+      "combined": 93
+    },
+    "single_agent": {
+      "shared_quality": 51,
+      "deliberative_process": 8,
+      "combined": 59
+    },
+    "mcda": {
+      "shared_quality": 43,
+      "deliberative_process": 3,
+      "combined": 46
+    }
+  },
+  "emergent_issue_discovery": {
+    "multi_agent": {
+      "candidate": 7,
+      "valid": 4,
+      "weak_but_interesting": 1,
+      "duplicate": 2,
+      "unsupported_or_hallucinated": 0
+    },
+    "single_agent": {
+      "candidate": 3,
+      "valid": 1,
+      "weak_but_interesting": 1,
+      "duplicate": 1,
+      "unsupported_or_hallucinated": 0
+    },
+    "mcda": {
+      "candidate": 1,
+      "valid": 0,
+      "weak_but_interesting": 1,
+      "duplicate": 0,
+      "unsupported_or_hallucinated": 0
+    }
+  }
+}

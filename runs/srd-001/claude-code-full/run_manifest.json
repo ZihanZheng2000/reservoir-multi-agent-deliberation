@@ -1,0 +1,62 @@
+{
+  "run_id": "demo-001-cc",
+  "case_id": "SRD-001-cc",
+  "case_title": "North Fork Multipurpose Reservoir",
+  "run_date": "2026-06-26",
+  "rubric_version": "v3-three-layer",
+  "gold_checklist": "artifacts/demo-001/protocols/evaluator-only-gold-checklist.md",
+  "gold_checklist_tiers": { "must_detect": 7, "should_detect": 8 },
+  "role_cards": "artifacts/demo-001-cc/agents/role-cards-v0.1.md",
+  "scenario_input": "artifacts/demo-001/inputs/synthetic-reservoir-scenario-v0.2-neutral.md",
+  "scenario_field_prefix": "F",
+
+  "expected_decision_range": ["Redesign", "Build with conditions"],
+  "suspicious_decisions": ["Build", "Do not build"],
+
+  "outputs": {
+    "round_1_expert": "artifacts/demo-001-cc/outputs/round-1-expert-assessments.md",
+    "round_1_stakeholder": "artifacts/demo-001-cc/outputs/round-1-stakeholder-assessments.md",
+    "moderator_conflict_map": "artifacts/demo-001-cc/outputs/moderator-conflict-map.md",
+    "round_2_deliberation": "artifacts/demo-001-cc/outputs/round-2-deliberation.md",
+    "evidence_audit": "artifacts/demo-001-cc/outputs/evidence-audit.md",
+    "decision_authority_recommendation": "artifacts/demo-001-cc/outputs/decision-authority-recommendation.md",
+    "baseline_single_agent": "artifacts/demo-001-cc/outputs/baseline-single-agent.md",
+    "baseline_mcda": "artifacts/demo-001-cc/outputs/baseline-mcda.md",
+    "evaluation_three_layer": "artifacts/demo-001-cc/outputs/evaluation-three-layer.md",
+    "run_summary": "artifacts/demo-001-cc/outputs/run-summary.md"
+  },
+
+  "final_scores": {
+    "multi_agent": { "L1_outcome": 26, "L2_evidence": 36, "L3_process": 49, "L1_max": 30, "L2_max": 40, "L3_max": 55 },
+    "single_agent": { "L1_outcome": 16, "L2_evidence": 22, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null },
+    "mcda": { "L1_outcome": 13, "L2_evidence": 18, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null }
+  },
+
+  "risk_coverage": {
+    "multi_agent": { "M_detected": 7, "M_total": 7, "S_detected": 7, "S_total": 8, "L2_2_score": 19 },
+    "single_agent": { "M_detected": "~5", "M_total": 7, "S_detected": "~5", "S_total": 8, "L2_2_score": 13 },
+    "mcda": { "M_detected": "~3", "M_total": 7, "S_detected": "~5", "S_total": 8, "L2_2_score": 9 }
+  },
+
+  "final_recommendation": {
+    "multi_agent": "Redesign + Defer",
+    "single_agent": "Defer",
+    "mcda": "Redesign (score 2.15/5.0)",
+    "in_expected_range": { "multi_agent": true, "single_agent": "adjacent", "mcda": true }
+  },
+
+  "unique_contributions": [
+    "Combined downside BCR estimate (0.65–0.80) — produced via R2 joint exchange",
+    "Sacred sites as separate consent process, not resettlement plan item — produced via Upstream Residents required challenge",
+    "R8 (hydropower/flood pre-release conflict) — produced via Downstream Users stakeholder",
+    "USD 355–512M financing gap quantified — produced via Financier R2 clarification",
+    "Do not build trigger preserved if fish passage fails — Ecologist minority position"
+  ],
+
+  "required_challenges_executed": 7,
+  "required_challenges_total": 7,
+  "claims_audited": 78,
+  "claims_corrected": 7,
+  "minority_reports": 4,
+  "unresolved_audit_blockers": 0
+}

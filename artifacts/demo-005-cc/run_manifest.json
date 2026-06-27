@@ -1,0 +1,44 @@
+{
+  "run_id": "demo-005-cc",
+  "case_id": "SRD-005-cc",
+  "case_title": "Upper Azul Reservoir",
+  "run_date": "2026-06-26",
+  "run_type": "Claude Code compact run",
+  "rubric_version": "v3-three-layer",
+  "gold_checklist": "artifacts/demo-005/protocols/evaluator-only-gold-checklist.md",
+  "gold_checklist_tiers": { "must_detect": 5, "should_detect": 5 },
+  "scenario_input": "artifacts/demo-005/inputs/synthetic-reservoir-scenario-v0.1.md",
+  "expected_decision_range": ["Defer pending binding basin agreement", "Build only after binding operating rules and joint monitoring"],
+  "suspicious_decisions": ["Build based only on upstream domestic permit authority", "Do not build outright without acknowledging upstream water-security need"],
+  "outputs": {
+    "run_summary": "artifacts/demo-005-cc/outputs/run-summary.md",
+    "evaluation_three_layer": "artifacts/demo-005-cc/outputs/evaluation-three-layer.md"
+  },
+  "final_scores": {
+    "multi_agent": { "L1_outcome": 26, "L2_evidence": 34, "L3_process": 45, "L1_max": 30, "L2_max": 40, "L3_max": 55 },
+    "single_agent": { "L1_outcome": 20, "L2_evidence": 27, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null },
+    "mcda": { "L1_outcome": 14, "L2_evidence": 20, "L3_process": null, "L1_max": 30, "L2_max": 40, "L3_max": null }
+  },
+  "risk_coverage": {
+    "multi_agent": { "M_detected": 5, "M_total": 5, "S_detected": 5, "S_total": 5, "L2_2_score": 18 },
+    "single_agent": { "M_detected": 5, "M_total": 5, "S_detected": 3, "S_total": 5, "L2_2_score": 14 },
+    "mcda": { "M_detected": 3, "M_total": 5, "S_detected": 2, "S_total": 5, "L2_2_score": 10 }
+  },
+  "final_recommendation": {
+    "multi_agent": "Defer pending binding basin agreement, joint monitoring, and drought-contingent operating rules",
+    "single_agent": "Defer until downstream agreement and monitoring",
+    "mcda": "Defer / Redesign pending basin agreement (score ~2.55/5.0)",
+    "in_expected_range": { "multi_agent": true, "single_agent": true, "mcda": true }
+  },
+  "key_deliberative_contributions": [
+    "Drought-contingent vs. average-flow operating rule distinction — produced via Hydrologist + Downstream Farmers exchange",
+    "Monitoring enforceability as governance linchpin — produced via Legal + Moderator joint analysis",
+    "Both competing legal interpretations preserved as contested — produced via audit corrections A1 and A2",
+    "Basin-wide BCR 1.05 vs. upstream-only 1.36 — produced via Economist required challenge",
+    "Ramsar wetland seasonal flood pulse gap — produced via Ecologist and Wetland NGO exchange"
+  ],
+  "claims_audited": 60,
+  "claims_corrected": 5,
+  "minority_reports": 3,
+  "unresolved_audit_blockers": 0
+}

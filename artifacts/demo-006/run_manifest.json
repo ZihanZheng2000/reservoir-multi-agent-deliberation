@@ -1,0 +1,29 @@
+﻿{
+    "mode":  "compact run",
+    "outputs":  {
+                    "compact_three_layer_evaluation":  "artifacts/demo-006/outputs/evaluation-three-layer-compact.md",
+                    "case_run_summary":  "artifacts/demo-006/outputs/case-run-summary.md"
+                },
+    "run_label":  "compact synthetic run",
+    "score_summary":  {
+                          "single_agent":  {
+                                               "layer_2_evidence":  31,
+                                               "layer_1_outcome":  28
+                                           },
+                          "mcda":  {
+                                       "layer_2_evidence":  30,
+                                       "layer_1_outcome":  28
+                                   },
+                          "multi_agent":  {
+                                              "layer_1_outcome":  29,
+                                              "layer_2_evidence":  34,
+                                              "layer_3_process":  35
+                                          }
+                      },
+    "project":  "reservoir-multi-agent-deliberation",
+    "evaluator_only_gold_checklist":  "artifacts/demo-006/protocols/evaluator-only-gold-checklist.md",
+    "input_packet":  "artifacts/demo-006/inputs/synthetic-reservoir-scenario-v0.1.md",
+    "case_id":  "SRD-006",
+    "final_recommendation":  "Build; commissioning conditions attached",
+    "run_date":  "2026-06-26"
+}
