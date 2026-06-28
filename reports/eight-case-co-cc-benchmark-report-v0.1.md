@@ -82,9 +82,9 @@ The MCDA baseline evaluates eleven criteria: water supply benefit, flood control
 
 The multi-agent system is not compared against baselines on Process Quality, because MCDA and single-agent formats are not designed to simulate deliberation. Applying a process-quality rubric to these baselines would mechanically inflate the multi-agent advantage without providing meaningful comparison.
 
-![Figure 1. Meeting-style workflow for role-limited reservoir deliberation.](figure1-workflow.png)
+![Figure 1. Role-limited multi-agent reservoir approval deliberation, agent-facing view.](figure1-workflow.png)
 
-**Figure 1. Meeting-style workflow for role-limited reservoir deliberation.** Agent roles deliberate from the same scenario packet and evidence fields. Hidden evaluator materials are applied only after generation to score outcome quality, evidence quality, and multi-agent process quality.
+**Figure 1. Role-limited multi-agent reservoir approval deliberation, agent-facing view.** Expert and stakeholder agents deliberate using shared scenario materials. Hidden evaluator checklists are not shown to agents and are applied only after generation for scoring.
 
 ### 2.3 Evaluation Rubric
 

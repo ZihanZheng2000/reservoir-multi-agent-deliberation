@@ -1,8 +1,8 @@
 # Figure Captions
 
-## Figure 1. Role-limited multi-agent reservoir decision benchmark workflow
+## Figure 1. Role-limited multi-agent reservoir approval deliberation, agent-facing view
 
-All decision-support systems receive the same agent-facing synthetic reservoir case packet. The hidden evaluator packet is used only after generation to score risk coverage and decision-range fit. Multi-agent outputs are evaluated on Outcome Quality, Evidence Quality, and Process Quality; single-agent and MCDA baselines are evaluated only on Outcome and Evidence Quality.
+Seven expert and stakeholder roles deliberate on a proposed reservoir using shared scenario materials. The hidden evaluator checklist is not shown to agents and is applied only after generation for scoring. The figure separates agent-facing deliberation from post-generation scoring, cross-model robustness checking, and the three-layer evaluation structure.
 
 ## Figure 2. Multi-agent advantage over single-agent and MCDA baselines
 

@@ -4,15 +4,7 @@ This repository contains a research prototype and synthetic benchmark for evalua
 
 The project asks a practical question: can a multi-agent system simulate the structure of a reservoir approval meeting better than a single-agent analysis or a weighted MCDA baseline? The system assigns different roles to hydrologists, dam-safety engineers, ecologists, economists, legal/policy experts, affected communities, financiers, and decision authorities. The goal is not to claim that AI can make objectively correct infrastructure decisions. The goal is to test whether multi-agent deliberation produces more inspectable, role-bounded, and procedurally useful decision-support reasoning.
 
-## Overview Figures
-
-![Meeting-style workflow for role-limited reservoir deliberation.](reports/figure1-workflow.png)
-
-**Figure 1.** Role-limited expert and stakeholder agents deliberate from the same scenario packet, while evaluator-only materials are applied after generation.
-
-![Multi-agent advantage over single-agent and MCDA baselines.](reports/figure2-baseline-comparison.png)
-
-**Figure 2.** Case-level comparison using the directly comparable score layers: Outcome Quality plus Evidence Quality.
+![Role-limited multi-agent reservoir approval deliberation.](reports/figure1-workflow.png)
 
 ## Current Status
 
