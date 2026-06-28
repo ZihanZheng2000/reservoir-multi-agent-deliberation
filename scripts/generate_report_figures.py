@@ -52,8 +52,7 @@ COLORS = {
 
 
 def save_all(fig, stem):
-    for ext in ("png", "pdf", "svg"):
-        fig.savefig(REPORTS / f"{stem}.{ext}", dpi=300, bbox_inches="tight", facecolor="white")
+    fig.savefig(REPORTS / f"{stem}.png", dpi=300, bbox_inches="tight", facecolor="white")
 
 
 def comparable_scores(env):
