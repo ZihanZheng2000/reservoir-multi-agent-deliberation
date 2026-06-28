@@ -82,6 +82,10 @@ The MCDA baseline evaluates eleven criteria: water supply benefit, flood control
 
 The multi-agent system is not compared against baselines on Process Quality, because MCDA and single-agent formats are not designed to simulate deliberation. Applying a process-quality rubric to these baselines would mechanically inflate the multi-agent advantage without providing meaningful comparison.
 
+![Figure 1. Meeting-style workflow for role-limited reservoir deliberation.](figure1-workflow.png)
+
+**Figure 1. Meeting-style workflow for role-limited reservoir deliberation.** Agent roles deliberate from the same scenario packet and evidence fields. Hidden evaluator materials are applied only after generation to score outcome quality, evidence quality, and multi-agent process quality.
+
 ### 2.3 Evaluation Rubric
 
 The evaluation uses a three-layer rubric (v3).
@@ -125,6 +129,10 @@ Codex and Claude Code produced the same decision direction for every case. Wordi
 
 Table 4 reports L1 and L2 scores for multi-agent, single-agent, and MCDA outputs, and L3 for multi-agent outputs only, across the Codex runs. For SRD-001 the full transcript-style run is reported; for SRD-002–SRD-008 the compact runs are reported.
 
+![Figure 2. Multi-agent advantage over single-agent and MCDA baselines.](figure2-baseline-comparison.png)
+
+**Figure 2. Multi-agent advantage over single-agent and MCDA baselines.** Each row compares systems on the same case using only the directly comparable layers: Outcome Quality (L1) plus Evidence Quality (L2), with a maximum score of 70. Right-side labels report the multi-agent gain over single-agent and MCDA baselines.
+
 **Table 4. Codex Run Scores by Layer and System**
 
 | Case | MA L1 /30 | MA L2 /40 | MA L3 /55 | SA L1 /30 | SA L2 /40 | MCDA L1 /30 | MCDA L2 /40 |
@@ -164,6 +172,10 @@ Table 5 reports scores for the Claude Code runs, evaluated under the v3 three-la
 The Claude Code profile differs from Codex in three respects. Multi-agent L2 Evidence Quality means are identical across environments (34.6 in both), while multi-agent L3 Process Quality is higher in the Claude Code runs (44.8 vs. 42.1). This is consistent with the qualitative observation that Claude Code compact artifacts tend to preserve more audit-explicit detail, including claim correction records and deliberative trace information. Codex scores higher on L1 Outcome Quality (28.1 vs. 26.5), partly because Codex recommendations are more directly phrased as action pathways.
 
 Single-agent and MCDA baselines score more severely in the Claude Code runs. Because the baseline prompts are identical across environments, this difference likely reflects stricter rubric application in the Claude Code evaluations rather than genuine performance differences between the baseline systems. Cross-environment comparison of baseline scores should therefore be treated cautiously.
+
+![Figure 3. Case-level diagnostic profile of multi-agent deliberation.](figure3-case-diagnostics.png)
+
+**Figure 3. Case-level diagnostic profile of multi-agent deliberation.** Outcome, Evidence, and Process columns report normalized multi-agent layer scores. Gain columns report additional L1+L2 points over single-agent and MCDA baselines. Cell color is column-normalized to reveal high and low cases within each diagnostic dimension.
 
 ### 3.4 Cross-Model Comparison
 
