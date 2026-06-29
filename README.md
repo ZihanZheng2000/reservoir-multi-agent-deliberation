@@ -2,7 +2,7 @@
 
 This repository contains a research prototype and synthetic benchmark for evaluating role-limited multi-agent deliberation in reservoir construction decision support.
 
-The project asks a practical question: can a multi-agent system simulate the structure of a reservoir approval meeting better than a single-agent analysis or a weighted MCDA baseline? The system assigns different roles to hydrologists, dam-safety engineers, ecologists, economists, legal/policy experts, affected communities, financiers, and decision authorities. The goal is not to claim that AI can make objectively correct infrastructure decisions. The goal is to test whether multi-agent deliberation produces more inspectable, role-bounded, and procedurally useful decision-support reasoning.
+The project asks a practical question: can a role-limited multi-agent system approximate the deliberative structure of a reservoir approval meeting better than a single-agent analysis or a weighted MCDA baseline? The system assigns different roles to hydrologists, dam-safety engineers, ecologists, economists, legal/policy experts, affected communities, financiers, and decision authorities. It follows an expert-specialization intuition similar in spirit to mixture-of-experts systems, but the output is produced through visible disagreement, evidence citation, moderation, and decision synthesis rather than through an internal neural routing mechanism. The goal is not to claim that AI can make objectively correct infrastructure decisions. The goal is to test whether multi-agent deliberation produces more inspectable, role-bounded, and procedurally useful decision-support reasoning.
 
 ![Role-limited multi-agent reservoir approval deliberation.](reports/figure1-workflow.png)
 
@@ -46,7 +46,7 @@ scripts/        Reserved for future reproducibility utilities
 
 | System | Role in benchmark |
 |---|---|
-| Multi-agent deliberation | Main method; simulates expert/stakeholder approval meeting |
+| Multi-agent deliberation | Main method; approximates an expert/stakeholder approval deliberation |
 | Single-agent baseline | One integrated decision analyst reviewing the same scenario |
 | MCDA baseline | Weighted multi-criteria scoring baseline |
 
@@ -58,13 +58,13 @@ The current rubric has three layers:
 2. **Evidence Quality /40**: evidence grounding, risk coverage, uncertainty calibration.
 3. **Process Quality /55**: stakeholder/conflict representation, role fidelity, objection-response quality, evidence audit/revision, minority preservation.
 
-Layer 1 and Layer 2 are used for cross-system comparison. Layer 3 is reported only for the multi-agent system because single-agent and MCDA baselines are not designed to simulate deliberation.
+Layer 1 and Layer 2 are used for cross-system comparison. Layer 3 is reported only for the multi-agent system because single-agent and MCDA baselines are not designed to produce deliberation records.
 
 ## Key Report
 
 The main current report is:
 
-- [`reports/eight-case-co-cc-benchmark-report-v0.1.md`](reports/eight-case-co-cc-benchmark-report-v0.1.md)
+- [`reports/role-limited-multi-agent-deliberation-reservoir-decision-support.md`](reports/role-limited-multi-agent-deliberation-reservoir-decision-support.md)
 
 ## Main Finding
 

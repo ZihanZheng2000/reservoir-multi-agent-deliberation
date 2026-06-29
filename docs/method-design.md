@@ -12,6 +12,10 @@ The deliberation system uses three broad groups:
 
 Agents are intentionally role-limited. A hydrologist should not become a legal expert; an economist should not decide cultural acceptability; an affected-resident agent should represent affected interests rather than become a generic analyst. This limitation is part of the method because it creates meaningful disagreement.
 
+## Expert-Specialization Framing
+
+The system has an expert-specialization intuition similar in spirit to mixture-of-experts systems. Expertise is distributed across specialized roles, but the system does not implement a conventional neural MoE architecture with learned routing or gating. Its distinctive feature is that expert specialization is made visible through deliberation: agents cite evidence, expose disagreements, preserve minority positions, and escalate unresolved conflicts to the moderator and decision authority.
+
 ## Run Types
 
 ### Full Run

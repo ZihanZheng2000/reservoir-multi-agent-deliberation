@@ -4,7 +4,7 @@
 
 This suite defines 8 synthetic reservoir decision cases for evaluating the role-limited multi-agent deliberation system.
 
-The goal is not to prove that any simulated recommendation is objectively correct. The goal is to test whether the system can produce acceptable, evidence-grounded, conflict-sensitive decision-support artifacts across different types of difficult reservoir decisions.
+The goal is not to prove that any generated recommendation is objectively correct. The goal is to test whether the system can produce acceptable, evidence-grounded, conflict-sensitive decision-support artifacts across different types of difficult reservoir decisions.
 
 Each case should be evaluated with:
 
