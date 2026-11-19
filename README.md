@@ -6,6 +6,16 @@ The project asks a practical question: can a role-limited multi-agent system app
 
 ![Role-limited multi-agent reservoir approval deliberation.](reports/figure1-workflow.png)
 
+## Auto-Research Application
+
+This project was developed using the [Human–AI Collaborative Science Framework](https://github.com/ZihanZheng2000/human-ai-collaborative-science-framework) as a methodological research application. The research workflow is distinct from the multi-agent deliberation method being evaluated.
+
+- **Planning and method design:** formulate a decision-support research question and design role-limited expert deliberation with single-agent and MCDA comparisons.
+- **Execution:** construct eight synthetic scenarios and run the benchmark with Codex and Claude Code, retaining transcript-style and compact outputs in [runs/](runs/).
+- **Evaluation and refinement:** assess outcome, evidence and process quality using [protocols/](protocols/), and consolidate findings and limitations in the [research report](reports/role-limited-multi-agent-deliberation-reservoir-decision-support.md).
+
+The [framework case study](https://github.com/ZihanZheng2000/human-ai-collaborative-science-framework/tree/master/case-studies/reservoir-deliberation) documents reconstructed execution evidence and method revision. This is a synthetic research benchmark, not a validated infrastructure approval system or a complete original orchestrator trace.
+
 ## Current Status
 
 - Synthetic benchmark cases: 8
